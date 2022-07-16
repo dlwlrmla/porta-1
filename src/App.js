@@ -5,7 +5,7 @@ function App() {
   return (
     <Container>  
 
-      <h1>conten</h1>
+      <h1>HOLA UWU</h1>
     </Container>
 
   );
