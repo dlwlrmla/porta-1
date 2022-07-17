@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
+import "./Carrusel.css"
 import Carousel from 'react-bootstrap/Carousel';
+import css from "../../assets/css.png"
+import js from "../../assets/js.png"
+import html from "../../assets/html.png"
 
-function Carrusel() {
+export default function Carrusel() {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
@@ -9,11 +13,11 @@ function Carrusel() {
   };
   
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item>
+    <Carousel activeIndex={index} onSelect={handleSelect} className="carro">
+      <Carousel.Item className="">
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
+          className="imagen"
+          src={css}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -21,10 +25,10 @@ function Carrusel() {
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item className="">
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
+          className="imagen"
+          src={js}
           alt="Second slide"
         />
 
@@ -33,10 +37,10 @@ function Carrusel() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item className="">
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
+          className="imagen"
+          src={html}
           alt="Third slide"
         />
 
@@ -51,4 +55,4 @@ function Carrusel() {
   );
 }
 
-render(<Carrusel/>);
+//render(<Carrusel/>)
