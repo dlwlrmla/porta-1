@@ -1,0 +1,10 @@
+.ajuste{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    width:80rem;
+    height:20rem;   
+}     
