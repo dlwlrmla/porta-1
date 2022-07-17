@@ -1,6 +1,7 @@
 import { Container } from 'react-bootstrap';
 import Navbar from './components/nav/Navbar';
-import Carrusel from "./components/carrusel/Carrusel"
+import Tecnologias from './pages/Tecnologias';
+import { Routes, Route } from "react-router-dom"
 import './App.css';
 
 
@@ -10,12 +11,12 @@ function App() {
   return (
     <>
     <Navbar/>
-    <Container className="a">  
-
-      <h1>HOLA UWU</h1>
-      <Container className="carro">
-        <Carrusel/>
-      </Container>
+    <Container >  
+      <Routes>
+        <Route index element={<Tecnologias/>} />
+        {/* <Route path="/Proyectos" element={}/>
+        <Route path="/Proyectos" element={}/> */}
+      </Routes>
     </Container>
 
     </>

@@ -1,19 +1,27 @@
 import Nav from 'react-bootstrap/Nav';
+import {LinkContainer} from 'react-router-bootstrap'
 import "./Navbar.css"
+
+
+
 
 function TabsExample() {
   return (
     <Nav variant="tabs" defaultActiveKey="/home" className="d-flex-md justify-content-around">
       <Nav.Item>
-        <Nav.Link href="/home">Active</Nav.Link>
+        <LinkContainer to="/">
+          <Nav.Link href="/home">Tecnologias</Nav.Link>
+        </LinkContainer>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-1">Option 2</Nav.Link>
+      <LinkContainer to="/Proyectos">
+        <Nav.Link eventKey="link-1" to="/Proyectos">Proyectos</Nav.Link>
+      </LinkContainer>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="disabled" disabled>
-          Disabled
-        </Nav.Link>
+        <LinkContainer to="/Contacto">
+          <Nav.Link eventKey="link-2" to="/Proyectos">Contacto</Nav.Link>
+        </LinkContainer>
       </Nav.Item>
     </Nav>
   );
