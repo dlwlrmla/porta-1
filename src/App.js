@@ -5,7 +5,7 @@ function App() {
   return (
     <Container className="a">  
 
-      <h1>conten</h1>
+      <h1>HOLA UWU</h1>
     </Container>
 
   );
