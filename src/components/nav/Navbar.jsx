@@ -3,7 +3,7 @@ import "./Navbar.css"
 
 function TabsExample() {
   return (
-    <Nav variant="tabs" defaultActiveKey="/home" className="d-flex justify-content-around">
+    <Nav variant="tabs" defaultActiveKey="/home" className="d-flex-md justify-content-around">
       <Nav.Item>
         <Nav.Link href="/home">Active</Nav.Link>
       </Nav.Item>
